@@ -47,6 +47,23 @@ namespace MyFavoriteThings
 
             braveNewWorld.Read();
 
+            var worldOfWarcraft = new VideoGames("World of Warcraft", new DateTime(2004, 11, 24))
+            {
+                Developer = "Blizzard",
+                GameGenre = GameGenre.MMO
+            };
+
+            worldOfWarcraft.Play();
+            worldOfWarcraft.Return();
+
+            var doom = new VideoGames("Doom", new DateTime(1993, 12, 10))
+            {
+                Developer = "id Software",
+                GameGenre = GameGenre.Shooter
+            };
+
+            doom.Play();
+            doom.Return();
 
             Console.ReadKey();
         }
