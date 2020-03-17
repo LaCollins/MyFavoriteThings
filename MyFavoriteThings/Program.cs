@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyFavoriteThings.Reptiles;
+using System;
 
 namespace MyFavoriteThings
 {
@@ -6,15 +7,23 @@ namespace MyFavoriteThings
     {
         static void Main(string[] args)
         {
-            var jericho = new Reptiles("Jericho", Type.Snake);
+            var jericho = new Snake("Jericho", "Boa Constrictor");
 
-            jericho.CheckDiet();
             jericho.FeedReptile();
+            jericho.Speak();
+            jericho.Slither();
 
-            var rogue = new Reptiles("Rogue", Type.Iguana);
+            var rogue = new Iguana("Rogue", "Green Iguana");
 
-            rogue.CheckDiet();
             rogue.FeedReptile();
+            rogue.Speak();
+            rogue.Dislike();
+
+            var snuggles = new Alligator("Snuggles", "American Alligator");
+
+            snuggles.FeedReptile();
+            snuggles.Speak();
+            snuggles.DeathRoll();
 
             var fgfc820 = new Music("FGFC820", Genre.Aggrotech)
             {
