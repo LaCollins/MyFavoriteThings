@@ -1,4 +1,5 @@
-﻿using MyFavoriteThings.Reptiles;
+﻿using MyFavoriteThings.Books;
+using MyFavoriteThings.Reptiles;
 using System;
 
 namespace MyFavoriteThings
@@ -41,7 +42,7 @@ namespace MyFavoriteThings
             vnvNation.RockOut("Exit/In");
             vnvNation.CheckAlbums();
 
-            var theGrapesOfWrath = new Books("The Grapes of Wrath", 525)
+            var theGrapesOfWrath = new Novel("The Grapes of Wrath", 525, "John Steinbeck")
             {
                 HaveRead = true
             };
@@ -49,12 +50,16 @@ namespace MyFavoriteThings
             theGrapesOfWrath.Open();
             theGrapesOfWrath.Read();
 
-            var braveNewWorld = new Books("Brave New World", 452)
+            var braveNewWorld = new Novel("Brave New World", 452, "Aldous Huxley")
             {
                 HaveRead = false
             };
 
             braveNewWorld.Read();
+
+            var verdi = new PictureBook("Verdi", 15, "Janell Cannon");
+
+            verdi.Read();
 
             var worldOfWarcraft = new VideoGames("World of Warcraft", new DateTime(2004, 11, 24))
             {
