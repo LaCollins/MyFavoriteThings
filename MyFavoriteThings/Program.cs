@@ -1,4 +1,5 @@
 ﻿using MyFavoriteThings.Books;
+using MyFavoriteThings.Music;
 using MyFavoriteThings.Reptiles;
 using System;
 
@@ -26,21 +27,27 @@ namespace MyFavoriteThings
             snuggles.Speak();
             snuggles.DeathRoll();
 
-            var fgfc820 = new Music("FGFC820", Genre.Aggrotech)
+            var fgfc820 = new Industrial("FGFC820", "Aggrotech")
             {
                 AlbumNumber = 10
             };
 
             fgfc820.RockOut("Bridgestone Arena");
             fgfc820.CheckAlbums();
+            fgfc820.Bringit();
 
-            var vnvNation = new Music("VNV Nation", Genre.Industrial)
+            var vnvNation = new Industrial("VNV Nation", "EBM")
             {
                 AlbumNumber = 20
             };
 
             vnvNation.RockOut("Exit/In");
             vnvNation.CheckAlbums();
+            vnvNation.Bringit();
+
+            var bach = new Classical("Johan Sebestian Bach", "Baroque");
+
+            bach.Encore();
 
             var theGrapesOfWrath = new Novel("The Grapes of Wrath", 525, "John Steinbeck")
             {
